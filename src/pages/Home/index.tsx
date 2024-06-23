@@ -42,7 +42,7 @@ function Home() {
         </li>
       </ul>
 
-      <main className={styles.SelfDescription}>
+      <main className={classNames(styles.SelfDescription, "fadeIn")}>
         <h2>About me</h2>
         <ul className={styles.BasicInfo}>
           <li>
