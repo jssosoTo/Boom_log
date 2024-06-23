@@ -106,4 +106,22 @@ html {
 
   overflow: auto;
 }
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(1rem);
+    opacity: 50%;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+.fadeIn {
+  transition: var(--transition-duration);
+
+  animation: fadeIn 1s;
+}
 /* GLOBAL USEFUL */
