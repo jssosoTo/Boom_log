@@ -41,6 +41,28 @@ function Home() {
           </a>
         </li>
       </ul>
+
+      <main className={styles.SelfDescription}>
+        <h2>About me</h2>
+        <ul className={styles.BasicInfo}>
+          <li>
+            <p>Name: P0PC0RN (Real name is secret😎)</p>
+          </li>
+          <li>
+            <p>
+              job: Looking for front-end engineer, also can be a back-end
+              engineer(with node.js)
+            </p>
+          </li>
+          <li>
+            <p>
+              Description: Hi there! 👋 I'm P0PC0RN, I like playing CS2. I'm a
+              front-end developer with over 2 years , and have more than 10
+              months of work experience.
+            </p>
+          </li>
+        </ul>
+      </main>
     </div>
   );
 }
