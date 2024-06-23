@@ -27,7 +27,13 @@ function BlogDetail() {
           "full-screen"
         )}
       >
-        <main className={classNames(parentStyles.MainContainer, styles.Main)}>
+        <main
+          className={classNames(
+            parentStyles.MainContainer,
+            styles.Main,
+            "fadeIn"
+          )}
+        >
           <header className={styles.AuthorFunc}>
             <div className={styles.infoContainer}>
               <img src="/react.svg" alt="photo" />
