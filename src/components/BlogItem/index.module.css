@@ -1,0 +1,58 @@
+.BlogContainer {
+  padding: 1rem;
+
+  border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.BlogContainer h2 {
+  font-size: 1.8rem;
+}
+
+.BlogContainer p {
+  font-size: 1rem;
+  line-height: 1.15;
+
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.HideContainer {
+  display: flex;
+
+  align-items: end;
+}
+
+.HideContainer span {
+  flex: 1;
+}
+
+.HideContainer button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  color: #1772f6;
+}
+
+.Btns {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.Btn {
+  cursor: pointer;
+}
+
+.Author {
+  display: inline-block;
+}
+
+.Author:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

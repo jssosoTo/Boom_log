@@ -1,0 +1,32 @@
+.Container {
+  padding-top: 1.6rem !important;
+  padding-bottom: 1rem !important;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.MainContainer {
+  flex: 1;
+  width: 80%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+
+  border: 1px solid var(--border-color);
+}
+
+.ClassifyContainer {
+  display: flex;
+  gap: 2rem;
+
+  border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.ClassifyContainer li {
+  padding: 0.8rem;
+}
+
+.ClassifyContainer a {
+  text-decoration: none;
+}

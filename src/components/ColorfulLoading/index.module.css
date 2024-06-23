@@ -1,0 +1,45 @@
+.LoadingContainer {
+  clip-path: circle(0% at 100% 100%);
+  transition: var(--transition-duration);
+
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  background-position: 0%;
+
+  animation: animate 18s linear infinite;
+}
+
+.LoadingContainer img {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.8rem;
+
+  width: 3rem;
+  height: 3rem;
+
+  animation: rotate 1.2s backwards infinite;
+}
+
+.LoadingContainer.Colorful {
+  clip-path: circle(100% at 50% 50%);
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes animate {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 400%;
+  }
+}

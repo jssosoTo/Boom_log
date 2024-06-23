@@ -1,0 +1,74 @@
+nav {
+  height: var(--nav-height);
+  width: 100%;
+
+  border-bottom: 1px solid var(--border-color);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding: 0.5rem 0.9rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--transition-duration);
+}
+
+.NavLogo {
+  height: 80%;
+
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  font-size: 0.9rem;
+  color: var(--main-color);
+}
+
+.NavLogo img {
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.LinksContainer {
+  flex: 1;
+}
+
+.LinksContainer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.8rem;
+}
+
+.LinksContainer a {
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.funcBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.funcBtn button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 2rem;
+}
+
+.funcBtn button svg {
+  font-size: 1.2rem;
+}

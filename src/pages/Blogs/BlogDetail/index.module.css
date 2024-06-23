@@ -1,0 +1,151 @@
+.Main {
+  padding: 1rem;
+}
+
+.AuthorFunc {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+
+  gap: 0.6rem;
+
+  font-size: 1rem;
+}
+
+.infoContainer img {
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+
+  width: 2rem;
+  height: 2rem;
+}
+
+.Agree {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+
+  color: #8491a5;
+}
+
+.Contents {
+  margin-top: 1rem;
+}
+
+.Contents li {
+  list-style-type: disc;
+
+  margin-left: 1.2rem;
+}
+
+.Contents pre {
+  padding: 1rem;
+
+  background-color: var(--code-bg-color);
+  border-radius: 5px;
+}
+
+.Contents pre > code {
+  color: white;
+  background-color: transparent;
+}
+
+.Contents code {
+  background-color: #afb8c133;
+  padding: 0.1rem 0.2rem;
+  border-radius: 5px;
+}
+
+.Contents a:has(code) {
+  text-decoration: none;
+  color: var(--link-color) !important;
+}
+
+.Contents a code {
+  color: var(--link-color) !important;
+}
+
+.Contents a:has(code):hover {
+  text-decoration: underline;
+}
+
+.ColorfulContainer {
+  position: fixed;
+
+  left: 80%;
+
+  width: 18%;
+  padding: 0.6rem;
+  border-radius: 5px;
+
+  border: 1px solid var(--border-color);
+}
+
+.ColorfulContainer h3 {
+  font-size: 1.1rem;
+
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ColorfulImg {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  margin-top: 1.2rem;
+}
+
+.ColorfulImg img {
+  border-radius: 50%;
+
+  width: 2.4rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--border-color);
+}
+
+.ColorfulInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.ColorfulInfo div > h4:first-child {
+  color: var(--light-color);
+}
+
+.ColorfulBtns {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: column;
+  gap: 0.4rem;
+}
+
+.BtnFunc {
+  position: fixed;
+  bottom: 2rem;
+  left: 80%;
+
+  display: flex;
+  flex-flow: column;
+  gap: 1.2rem;
+  padding: 0.4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1000px;
+}
+
+.BtnFunc button {
+  font-size: 1.2rem;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}

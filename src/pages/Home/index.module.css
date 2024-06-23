@@ -1,0 +1,26 @@
+.HomePage {
+  padding: 2rem;
+  text-align: center;
+}
+
+.HomePage h1 {
+  font-weight: 500;
+}
+
+.HomePage ul {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 1.4rem;
+
+  margin: 0 auto;
+
+  margin-top: 2rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+}
+
+.HomePage ul a {
+  font-size: 1.4rem;
+}
