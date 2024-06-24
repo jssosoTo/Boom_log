@@ -1,0 +1,160 @@
+.Container {
+  padding-top: 1.6rem !important;
+  padding-bottom: 1rem !important;
+
+  height: calc(100vh - var(--nav-height));
+  max-height: calc(100vh - var(--nav-height));
+}
+
+.ChatContainer {
+  height: 100%;
+  border: 1px solid var(--border-color);
+
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.085);
+
+  display: flex;
+}
+
+.ListContainer {
+  width: 20rem;
+  border-right: 1px solid var(--border-color);
+}
+
+.ChatFunc {
+  flex: 1;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.NameContainer {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ListMain {
+  height: 100%;
+  overflow: auto;
+}
+
+.ListMain:hover::-webkit-scrollbar-thumb,
+.ChatContent:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(167, 167, 167, 0.7);
+}
+
+.ListMain::-webkit-scrollbar,
+.ChatContent::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 1rem;
+  background-color: transparent;
+}
+
+.ListMain::-webkit-scrollbar-thumb,
+.ChatContent::-webkit-scrollbar-thumb {
+  width: 0.3rem;
+  height: 1rem;
+  border-radius: 2rem;
+  background-color: transparent;
+}
+
+.ListMain li {
+  cursor: pointer;
+  display: flex;
+  gap: 0.4rem;
+
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ListMain li:hover {
+  background-color: var(--mask-color);
+}
+
+.ImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ChatInfoContainer {
+  overflow: hidden;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.ChatInfoContainer h4 {
+  font-size: 1rem;
+}
+
+.ChatInfoContainer p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: nowrap;
+  word-break: break-all;
+
+  font-size: 0.8rem;
+  color: var(--code-bg-color);
+}
+
+.ChatContent {
+  flex: 1;
+
+  display: grid;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  overflow: auto;
+}
+
+.ChatInput {
+  border-top: 1px solid var(--border-color);
+}
+
+.ChatInput textarea {
+  resize: none;
+  height: 7.5rem !important;
+  width: 100% !important;
+
+  outline: none;
+  border: none;
+
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+
+  background-color: transparent;
+}
+
+.InputContainer {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  padding-bottom: 0.4rem;
+}
+
+.InputContainer button {
+  transform: translateX(-10px);
+}
+
+.ChatContentItem {
+  display: flex;
+
+  gap: 0.4rem;
+}
+
+.ChatContentItemMe {
+  flex-direction: row-reverse;
+}
+
+.ChatSingle {
+  border: 1px solid var(--border-color);
+  padding: 0.4rem;
+  border-radius: 5px;
+
+  line-height: 1.5;
+}

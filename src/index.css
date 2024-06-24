@@ -59,7 +59,7 @@ html {
 
 /* GLOBAL USEFUL */
 .full-screen {
-  min-height: calc(100vh - var(--nav-height));
+  min-height: calc(100vh - var(--nav-height)) !important;
 }
 
 .rgba-black-bg {
@@ -67,6 +67,7 @@ html {
 }
 
 .boom_btn {
+  cursor: pointer;
   text-decoration: none;
   background-color: var(--main-color);
   color: var(--bg-color);

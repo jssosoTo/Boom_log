@@ -7,6 +7,7 @@ import useGlobalContext from "./components/Context/useGlobalContext";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import BlogDetail from "./pages/Blogs/BlogDetail";
+import Chat from "./pages/Chat";
 
 type RouteProps = {
   element: ReactNode;
@@ -37,6 +38,10 @@ function App() {
           path: "/blogs/*",
         },
       ],
+    },
+    {
+      element: <Chat />,
+      path: "/chat",
     },
     {
       element: <Error />,
