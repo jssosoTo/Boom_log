@@ -50,7 +50,7 @@ function Home() {
           </li>
           <li>
             <p>
-              job: Looking for front-end engineer, also can be a back-end
+              Job: Looking for front-end engineer, also can be a back-end
               engineer(with node.js)
             </p>
           </li>
