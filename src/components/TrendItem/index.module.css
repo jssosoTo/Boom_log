@@ -1,0 +1,53 @@
+.TrendContainer {
+  padding: 1rem;
+
+  display: flex;
+  gap: 1rem;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.RankTitle {
+  font-size: 1.5rem;
+  color: var(--link-color);
+}
+
+.Content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.Content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.Content p:nth-child(2) {
+  text-wrap: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  line-height: 1.5;
+}
+
+.Content p:first-child {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.Content p:first-child:hover {
+  text-decoration: underline;
+}
+
+.DataContainer {
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}

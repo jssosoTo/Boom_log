@@ -19,7 +19,10 @@ function BlogDetail() {
   const titleDOM = useRef(null);
 
   return (
-    <Sidebar sidebarContent={<div style={{ color: "red" }}>hello</div>}>
+    <Sidebar
+      isWithdraw={true}
+      sidebarContent={<div style={{ color: "red" }}>hello</div>}
+    >
       <div
         className={classNames(
           "main-container",

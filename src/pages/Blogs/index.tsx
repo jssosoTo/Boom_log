@@ -3,6 +3,7 @@ import Sidebar from "../../components/Sidebar";
 import styles from "./index.module.css";
 import { Link, useLocation } from "react-router-dom";
 import BlogItem, { BlogType } from "../../components/BlogItem";
+import TrendItem, { TrendInterface } from "../../components/TrendItem";
 
 function Blogs() {
   const classifyRoutes: { path: string; title: string }[] = [
@@ -83,6 +84,19 @@ function Blogs() {
   ];
   const location = useLocation();
 
+  const mockTrendData: Array<TrendInterface> = [
+    {
+      title:
+        "Just for Testingsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+      rank: 1,
+      publishTime: "2020-10-20 20:33:00",
+      author: "P0PC0RN",
+      visited: 998,
+      description:
+        "Hello rankihave so manytimestolearn the front-end developer's skillbutineverlearnnkihave so manytimestolearn the front-end developer's skillbutineverlearnnkihave so manytimestolearn the front-end developer's skillbutineverlearnnkihave so manytimestolearn the front-end developer's skillbutineverlearnnkihave so manytimestolearn the front-end developer's skillbutineverlearnnkihave so manytimestolearn the front-end developer's skillbutineverlearnittoomuchimsohouhuiaaaaaaaaaaa",
+    },
+  ];
+
   return (
     <Sidebar sidebarContent={<div style={{ color: "red" }}>hello</div>}>
       <div
@@ -112,9 +126,16 @@ function Blogs() {
             ))}
           </ul>
           <div className={styles.BlogsContainer}>
-            {blogs.map((blog) => (
-              <BlogItem key={blog.id} {...blog} />
-            ))}
+            {location.pathname !==
+            (
+              classifyRoutes.find((item) => item.title === "Trend") as {
+                path: string;
+              }
+            ).path
+              ? blogs.map((blog) => <BlogItem key={blog.id} {...blog} />)
+              : mockTrendData.map((item) => (
+                  <TrendItem key={item.rank} {...item} />
+                ))}
           </div>
         </main>
       </div>
