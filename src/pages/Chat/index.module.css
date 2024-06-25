@@ -1,14 +1,14 @@
 .Container {
-  padding-top: 1.6rem !important;
-  padding-bottom: 1rem !important;
-
   height: calc(100vh - var(--nav-height));
   max-height: calc(100vh - var(--nav-height));
 }
 
 .ChatContainer {
-  height: 100%;
   border: 1px solid var(--border-color);
+
+  margin-top: 1.6rem !important;
+  margin-bottom: 1rem !important;
+  height: calc(100vh - var(--nav-height) - 2.6rem);
 
   border-radius: 15px;
   overflow: hidden;
@@ -19,12 +19,12 @@
 
 .ListContainer {
   width: 20rem;
+  overflow: auto;
   border-right: 1px solid var(--border-color);
 }
 
 .ChatFunc {
   flex: 1;
-
   display: flex;
   flex-flow: column;
 }

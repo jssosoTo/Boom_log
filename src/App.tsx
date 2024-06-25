@@ -2,12 +2,13 @@ import { Fragment, ReactNode, useState } from "react";
 import Nav from "./components/Nav";
 import { Outlet, Route, Routes, useLocation } from "react-router-dom";
 import Error from "./pages/Error";
-import { ConfigProvider, theme } from "antd";
+import { ConfigProvider } from "antd";
 import useGlobalContext from "./components/Context/useGlobalContext";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import BlogDetail from "./pages/Blogs/BlogDetail";
 import Chat from "./pages/Chat";
+import Lab from "./pages/Lab";
 
 type RouteProps = {
   element: ReactNode;
@@ -42,6 +43,10 @@ function App() {
     {
       element: <Chat />,
       path: "/chat",
+    },
+    {
+      element: <Lab />,
+      path: "/lab",
     },
     {
       element: <Error />,
